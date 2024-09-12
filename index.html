@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: rgb(191, 203, 203);
+      }
+    </style>
+    <title>GameHouse</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./src/assets/logo-xbox.svg" alt="Logo XBOX" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+              <a class="nav-link" href="#produtos">Produtos</a>
+              <a class="nav-link" href="#cartaz">Em cartaz</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="produtos">
+        <div id="carousel-exemplo" class="carousel mb-5">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="./src/assets/produto1.jpg"  alt="Produto 1">
+                </div>
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="./src/assets/produto2.jpg" alt="Produto 2" >
+                </div>
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="./src/assets/produto3.jpg" alt="Produto 3">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev"  data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next"  data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="container" id="cartaz">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3" style="width: 18rem;">
+                        <img src="./src/assets/card1.png" class="card-img-top" alt="Jogo Farcry6">
+                        <div class="card-body">
+                          <h5 class="card-title">Farcry 6</h5>
+                          <p class="card-text">Far Cry 6 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Ubisoft Toronto e publicado pela Ubisoft.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3" style="width: 18rem;">
+                        <img src="./src/assets/card2.png" class="card-img-top" alt="Jogo Forza Horizon ">
+                        <div class="card-body">
+                          <h5 class="card-title">Forza Horizon 5</h5>
+                          <p class="card-text">Forza Horizon 5 é um jogo eletrônico de corrida desenvolvido pela Playground Games em associação com Turn 10 Studios.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3" style="width: 18rem;">
+                        <img src="./src/assets/card3.png" class="card-img-top" alt="Jogo Fifa">
+                        <div class="card-body">
+                          <h5 class="card-title">Fifa</h5>
+                          <p class="card-text">EA Sports FC, também conhecido como EAFC, é uma série de videojogos de futebol, lançados anualmente.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
